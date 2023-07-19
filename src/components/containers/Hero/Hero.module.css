@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+}
+
+.containerRight, .containerLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerRight{
+  
+}
+.containerLeft{
+}
+
+.image{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  
+}
+
+.icon{
+  width: 30px;
+}
+
+
+@media screen and ( max-width: 600px) {
+  .container{
+   flex-direction: column-reverse;
+  }
+  .containerRight, .containerLeft {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.btn{
+  background-color: var(--primary-color-3);
+  border: none;
+  padding: 0.7em;
+  border-radius: 0.2em;
+}
+
+.btn:hover{
+  background-color: var(--primary-color-4);
+}
