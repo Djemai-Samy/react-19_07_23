@@ -1,7 +1,7 @@
 import classes from "./Bouton.module.css";
-function Bouton({ children, couleur }) {
+function Bouton({ children, couleur, action }) {
 	return (
-		<button style={{ backgroundColor: couleur }} className={classes.btn}>
+		<button onClick={action} style={{ backgroundColor: couleur }} className={classes.btn}>
 			{children}
 		</button>
 	);

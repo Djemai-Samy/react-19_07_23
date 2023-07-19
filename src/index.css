@@ -20,6 +20,10 @@
   --primary-color-5: hsla( 250, 70%, 70%, 1); 
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;

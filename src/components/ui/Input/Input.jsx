@@ -6,6 +6,7 @@ export default function Input({ monType, monHolder, maValeur, error }) {
 					padding: "1em",
 					border: "none",
 					borderRadius: "0.5em",
+          width:"100%"
 				}}
 				type={monType}
 				placeholder={monHolder}

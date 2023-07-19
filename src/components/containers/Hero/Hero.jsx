@@ -4,14 +4,22 @@ import heroImage from "../../../assets/Image_samy_djemai.svg";
 import linkdin from "../../../assets/images/icons/linkedin.svg";
 import github from "../../../assets/images/icons/github.svg";
 export default function Hero() {
+	function disBonjour() {
+		alert("bonjour");
+	}
+
 	return (
 		<div className={classes.container}>
+		
+
 			<div className={classes.containerRight}>
-				<h2>Développeur full-stack</h2>
+				<h2 onClick={disBonjour}>Développeur full-stack</h2>
 				<p>
-					{"Je développe des sites Web et applications mobiles modernes et originales, qui s'adaptent aux besoins de chaque projet : multi-plateforme et responsive, référencement, réseaux sociaux, authentification, paiements en ligne..."}
+					{
+						"Je développe des sites Web et applications mobiles modernes et originales, qui s'adaptent aux besoins de chaque projet : multi-plateforme et responsive, référencement, réseaux sociaux, authentification, paiements en ligne..."
+					}
 				</p>
-				<Bouton>Me contacter</Bouton>
+				<Bouton action={disBonjour}>Me contacter</Bouton>
 			</div>
 			<div className={classes.containerLeft}>
 				<img className={classes.image} src={heroImage} alt="" />
@@ -27,3 +35,7 @@ export default function Hero() {
 		</div>
 	);
 }
+
+// Ajouter un input
+// Créer une fonction qui affiche le texte reçu en parametre
+// lier l'input avec la fonction en utilisant l'evenent onChange
